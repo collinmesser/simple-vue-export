@@ -1,23 +1,51 @@
 {
   "name": "simple-vue-export",
   "version": "0.1.0",
+  "author": "Collin Messer",
+  "license": "MIT",
   "private": true,
+  "main": "./dist/main.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "webpack --config ./webpack.config.js --modern",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "core-js": "^3.6.4",
+    "fibers": "^4.0.2",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.3",
+    "vue-router": "^3.1.5",
+    "vue-style-loader": "^4.1.2",
+    "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
+    "@vue/cli-plugin-babel": "~4.2.2",
+    "@vue/cli-plugin-eslint": "^4.2.2",
+    "@vue/cli-service": "~4.2.2",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "babel-jest": "^25.1.0",
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
+    "css-loader": "^3.4.2",
+    "eslint": "^4.0.0",
+    "eslint-plugin-vue": "4.7.1",
+    "jsdom": "^16.2.0",
+    "loader-utils": "^2.0.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "typescript": "^3.8.3",
+    "utf-8-validate": "^5.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "4.42.0",
+    "webpack-merge": "^4.2.0"
   }
 }
